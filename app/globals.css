@@ -3,31 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-aqua: #86fbfb;
+  --color-magenta: #e310cb;
+  --color-hot-magenta: #ff17ca;
+  --color-plum:#310430;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-aqua {
+  color: var(--color-aqua);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-magenta {
+  color: var(--color-magenta);
+}
+
+.text-hot-magenta {
+  color: var(--color-hot-magenta);
+}
+
+.bg-aqua {
+  background-color: var(--color-aqua);
+}
+
+.bg-magenta {
+  background-color: var(--color-magenta);
+}
+
+.bg-hot-magenta {
+  background-color: var(--color-hot-magenta);
+}
+.bg-plum{
+  background-color: var(--color-plum);
+}
+.float-left{
+  float: left;
+  margin-right: 20px;
+}
+.style-list{
+  list-style-type: disc;
+}
+.style-title{
+  list-style-type: decimal;
 }
