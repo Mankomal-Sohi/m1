@@ -1,23 +1,27 @@
 import { FaCode } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import Link from "next/link"
 
 const Nav = () => {
   return (
     <nav className="flex flex-row justify-between items-center w-[90%] h-[10%] px-4 mx-auto">
       <div className="flex flex-row justify-center items-center gap-2 text-3xl hover:text-[#E310CB]">
         <span className="text-[#86FBFB] text-3xl">
-          <FaCode />
-        </span>
+          <Link href="/"><FaCode /></Link>
+          </span>
         Mankomal
       </div>
       <div className="flex flex-row gap-4 justify-center items-center">
         <ul className="flex flex-row gap-4 justify-center items-center">
           <li className="w-16 h-8 text-4 hover:text-[#E310CB] flex justify-center items-center ">
-            Projects
+            About
           </li>
           <li className="w-16 h-8 text-4 hover:text-[#E310CB] flex justify-center items-center ">
-            About
+            Skills
+          </li>
+          <li className="w-16 h-8 text-4 hover:text-[#E310CB] flex justify-center items-center ">
+            Projects
           </li>
           <li className="w-16 h-8 text-4 hover:text-[#E310CB] flex justify-center items-center ">
             Contact

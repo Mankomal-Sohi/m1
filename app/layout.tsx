@@ -6,7 +6,7 @@ import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Portfolio | M1",
-  description: "Created by M1 and _",
+  description: "Created by Mankomaldeep",
 };
 
 export default function RootLayout({
